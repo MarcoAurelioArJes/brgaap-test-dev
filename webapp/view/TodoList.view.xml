@@ -14,17 +14,17 @@
          items="{todos>/}">
          <columns>
             <Column styleClass="cellBorderLeft cellBorderRight">
-               <Label text="Nome" />
+               <Label text="{i18n>title}" />
             </Column>
             <Column styleClass="cellBorderLeft cellBorderRight"
                   width="6rem"
                   hAlign="Center">
-               <Text text="Completado" />
+               <Text text="{i18n>completed}" />
             </Column>
             <Column styleClass="cellBorderLeft cellBorderRight" 
                   width="5rem"
                   hAlign="Center">
-               <Text text="Detalhes" />
+               <Text text="{i18n>details}" />
             </Column>
          </columns>
          <items>

@@ -4,14 +4,14 @@
   xmlns="sap.m">
 
   <Page
-    title="Detalhes da tarefa"
+    title="{i18n>taskDetails}"
     showNavButton="true"
     navButtonPress=".onNavBack">
     <content>
         <VBox backgroundDesign="Solid" class="sapUiMediumMarginTop" width="100%" height="12rem" justifyContent="Center" alignItems="Center">
                 <VBox width="20rem" class="sapUiSmallMarginBottom">
                     <HBox alignItems="Center" justifyContent="Start" width="100%" class="sapUiSmallMarginEnd">
-                        <Label text="Título:" vAlign="Middle" />
+                        <Label text="{i18n>title}:" vAlign="Middle" />
                     </HBox>
                     <HBox alignItems="Center" width="100%">
                         <Text id="title" text="{todoDetail>/title}" />
@@ -19,7 +19,7 @@
                 </VBox>
                 <HBox width="20rem">
                     <HBox alignItems="Center" justifyContent="Start" width="100%" class="sapUiSmallMarginEnd">
-                        <Label text="Usuário:" vAlign="Middle" />
+                        <Label text="{i18n>user}:" vAlign="Middle" />
                     </HBox>
                     <HBox alignItems="Center" justifyContent="Center" width="100%">
                         <Text id="username" text="{user>/name}" />
@@ -27,7 +27,7 @@
                 </HBox>
                 <HBox width="20rem">
                     <HBox alignItems="Center" justifyContent="Start" width="100%" class="sapUiSmallMarginEnd">
-                        <Label text="Concluído:" vAlign="Middle" />
+                        <Label text="{i18n>finished}:" vAlign="Middle" />
                     </HBox>
                     <HBox alignItems="Center" justifyContent="Center" width="100%">
                         <CheckBox 
