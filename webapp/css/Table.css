@@ -1,0 +1,8 @@
+.backgroundHeader {
+    background-color: #f7f7f7;
+}
+
+.sapMListTblCell.cellBorderRight,
+.sapMListTblCell.cellBorderLeft {
+	border-right: 1px solid #e7e8ea;
+}

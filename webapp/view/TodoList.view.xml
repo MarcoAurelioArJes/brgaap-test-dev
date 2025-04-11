@@ -1,0 +1,44 @@
+<mvc:View
+   controllerName="ui5.brgaapEntryLevelTest.controller.TodoList"
+   xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+   displayBlock="true">
+   <VBox width="100%"
+         class="sapUi-Std-PaddingS">
+      <SearchField 
+         width="100%"
+         liveChange=".onSearch"
+         search=".onSearch" />
+      <Table 
+         id="todos"
+         items="{todos>/}">
+         <columns>
+            <Column styleClass="cellBorderLeft cellBorderRight">
+               <Label text="Nome" />
+            </Column>
+            <Column styleClass="cellBorderLeft cellBorderRight"
+                  width="6rem"
+                  hAlign="Center">
+               <Text text="Completado" />
+            </Column>
+            <Column styleClass="cellBorderLeft cellBorderRight" 
+                  width="5rem"
+                  hAlign="Center">
+               <Text text="Detalhes" />
+            </Column>
+         </columns>
+         <items>
+            <ColumnListItem>
+               <cells>
+                  <Text text="{todos>title}" />
+                  <CheckBox 
+                     selected="{todos>completed}"
+                     editable="false" />
+                  <Button icon="sap-icon://show"
+                        press=".onDetails" />
+               </cells>
+            </ColumnListItem>
+         </items>
+      </Table>
+   </VBox>
+</mvc:View>

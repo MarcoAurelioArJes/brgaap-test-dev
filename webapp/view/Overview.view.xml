@@ -1,0 +1,17 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
+    <Page>
+        <customHeader>
+            <Bar class="sapUi-Std-PaddingS" >
+                <contentMiddle>
+                    <Image src="../assets/images/logo-brgaap.png" width="100px" />
+                </contentMiddle>
+            </Bar>
+        </customHeader>
+        <content>
+            <mvc:XMLView viewName="ui5.brgaapEntryLevelTest.view.TodoList"/>
+        </content>
+    </Page>
+</mvc:View>
